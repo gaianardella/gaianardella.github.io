@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW CaseDrive App Details - My Projects</title>
+  <style>
+    :root {
+      --ios-background: #f2f2f7;
+      --ios-card: #ffffff;
+      --ios-text: #000000;
+      --ios-secondary-text: #8e8e93;
+      --ios-primary: #007aff;
+      --ios-border: rgba(60, 60, 67, 0.1);
+      --ios-shadow: rgba(0, 0, 0, 0.05);
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: var(--ios-background);
+      color: var(--ios-text);
+      line-height: 1.5;
+    }
+    
+    header {
+      margin-bottom: 30px;
+    }
+    
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      color: var(--ios-primary);
+      text-decoration: none;
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+    
+    .back-button:before {
+      content: "←";
+      margin-right: 6px;
+    }
+    
+    h1 {
+      font-weight: 600;
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    
+    .badge {
+      display: inline-block;
+      background-color: rgba(0, 122, 255, 0.1);
+      color: var(--ios-primary);
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      margin-right: 6px;
+    }
+    
+    .subheader {
+      color: var(--ios-secondary-text);
+      margin-bottom: 30px;
+    }
+    
+    section {
+      background-color: var(--ios-card);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 12px var(--ios-shadow);
+    }
+    
+    h2 {
+      font-weight: 600;
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+    
+    p {
+      margin-bottom: 16px;
+    }
+    
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    
+    .tech-tag {
+      background-color: rgba(0, 122, 255, 0.1);
+      color: var(--ios-primary);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    /* Stile video */
+    .video-container {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px var(--ios-shadow);
+      margin-top: 16px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+    }
+    
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: var(--ios-secondary-text);
+      font-size: 14px;
+    }
+    
+    .github-link {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--ios-primary);
+      font-weight: 500;
+      border-radius: 8px;
+      padding: 8px 16px;
+      border: 1px solid var(--ios-primary);
+      transition: all 0.2s ease;
+      margin-top: 20px;
+    }
+    
+    .github-link:hover {
+      background-color: var(--ios-primary);
+      color: white;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ios-background: #1c1c1e;
+        --ios-card: #2c2c2e;
+        --ios-text: #ffffff;
+        --ios-secondary-text: #aeaeb2;
+        --ios-border: rgba(120, 120, 128, 0.2);
+        --ios-shadow: rgba(0, 0, 0, 0.3);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-button">Back to Projects</a>
+    <h1>Virgin App</h1>
+    <span class="badge">Flutter</span>
+    <span class="badge">Firebase</span>
+    <span class="badge">Munich Hacking Legal 2025</span>
+    <p class="subheader">A cross-platform mobile application developed in 24 hours during Munich Hacking Legal 2025 in Germany</p>
+  </header>
+  
+  <section>
+    <h2>Project Overview</h2>
+    <p>BMW CaseDrive is a Flutter-based application designed to assist lawyers in managing legal cases. By utilizing the Claude API, the assistant provides legal insights, risk metrics, and recommendations to help lawyers improve their chances of winning a case. The system also allows for the generation of legal documents such as settlement agreements, statements of defense, internal memos, and evidence, with real-time feedback from Claude.</p>
+    
+    <div class="tech-stack">
+      <span class="tech-tag">Flutter</span>
+      <span class="tech-tag">Dart</span>
+      <span class="tech-tag">Firebase</span>
+      <span class="tech-tag">Firebase Auth</span>
+      <span class="tech-tag">Cloud Firestore</span>
+    </div>
+  </section>
+  
+  <section>
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>Legal Insights & Risk Metrics:</strong> Upload legal documents and receive insights, case-winning probabilities, damage estimates, and strategies to improve your case's chances of success</li>
+      <li><strong>Case Suggestions:</strong>  Get recommendations for similar cases to study, enhancing your understanding of legal precedents and tactics that have worked in similar situations</li>
+      <li><strong>Document Generation:</strong> The system can generate key legal documents such as: Settlement agreements, Statements of defense, Internal memos, Evidence documents</li>
+      <li><strong>Document Modification and Feedback:</strong> Upload your own legal documents and receive feedback on your modifications, improving the quality and impact of your legal arguments</li>
+      <li><strong>Real-Time Interaction with Claude API:</strong> The tool interacts with the Claude API to analyze and improve your documents, providing real-time recommendations</li>
+      <li><strong>QR Code Scanner:</strong> Scan codes at physical locations to earn badges and points</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Demo Video</h2>
+    <div class="video-container">
+      <video src="images/BMW_CaseDrive_Demo.mp4">
+      </video>
+    </div>
+  </section>
+
+  <footer>
+    <p>Developed by Gaia Nardella at Munich Hacking Legal 2025</p>
+  </footer>
+</body>
+</html>
